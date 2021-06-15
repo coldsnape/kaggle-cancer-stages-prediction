@@ -10,7 +10,7 @@ To do this we will be training our model on 3 different classification algorithm
 ### About the Data
 - Our dataset is a combination of 21 datasets from different studies and has 8,302 rows and 979 columns. One of the columns is an I.D. indiciating from which dataset those observations came from, another is our target variable that indicates the presence of cancer, and the remaining columns refer to expression levels of 977 microRNAs. The datasets have different contribution percentages to our overall number of observations with dataset ID 16 contributing the most at over 6.5% of all observations and data set ID 10 contributing the least at a little over 3%. Our target to predict, presence of cancer is very imbalanced and is made up of 5 classes. With class 0 being represented the most at nearly 50% and class 4 being represented the least at less than 0.3%. Each of these classes are unique to its corresponding dataset. There are no null values in our dataset. And the expression levels of each microRNA seems to have already been standardized to a range between 0 and 1.
 
-[Data Pattern](data.png)
+[Data Pattern](images/data.png)
 
 ### Feature Engineering and ML Methods
 - First, to deal with the issue of our imbalanced targets, we employed over-sampling methods. We did this two ways: 1) we up-sampled all of the targets to reach the majority’s level of representation. What this meant is that each target now had equal representation, see figure below to the left. 2) we employed up-sampling on only the most minority class, which was target 4, see figure below to the right. What this meant though is that the very few observations of target 4 were now highly duplicated until they matched the frequency of the majority class.

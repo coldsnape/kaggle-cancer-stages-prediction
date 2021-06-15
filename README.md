@@ -24,5 +24,3 @@ In the end, our two model choices were an LGBM model+PCA and an XGBT model+PCA. 
 
 ### Statement of responsibility:
 Daniel and Danh are both equally responsible for all aspects of this project.
-
-#### Note: Data files are not included
